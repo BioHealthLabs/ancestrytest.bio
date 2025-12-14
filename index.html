@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>AncestryTest.bio – Ancestry DNA Tests Explained &amp; Compared (2025)</title>
+  <meta name="description"
+        content="AncestryTest.bio is an independent, evidence-based guide to ancestry DNA tests. Learn how ancestry estimates work, what accuracy means, how relative-matching differs between providers, and compare popular DNA kits via Genectics.com." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://ancestrytest.bio/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AncestryTest.bio – Ancestry DNA Tests Explained (2025)" />
+  <meta property="og:description"
+        content="Neutral, evidence-based information about ancestry DNA tests: ethnicity estimates, relative-matching, accuracy, privacy, and how to choose a kit—linked to detailed comparisons on Genectics.com." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ancestrytest.bio/" />
+  <meta property="og:image" content="https://genectics.com/og-image-ancestry.jpg" />
+
+  <!-- Structured data: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "AncestryTest.bio",
+    "url": "https://ancestrytest.bio/",
+    "description": "Independent, evidence-based information about ancestry DNA tests and how to compare providers.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "ronarn",
+      "url": "https://ronarn.com"
+    }
+  }
+  </script>
+
+  <!-- Structured data: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How accurate are ancestry DNA tests?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Accuracy depends on reference panels, database size, and how well your ancestry is represented. Relative-matching is usually the most reliable feature. Ethnicity percentages are estimates and can change as databases and methods update."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why do ethnicity percentages differ between companies?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Companies use different reference datasets and statistical models. The same DNA can be interpreted differently, especially for underrepresented regions or populations with historical mixing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is a bigger DNA database always better?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A bigger database often means more relative matches, but privacy controls, data-retention policies, and the provider’s methods matter just as much as size when choosing a kit."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I upload raw DNA data to other services?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Some platforms let you upload raw DNA files for additional matching or reports. Options vary by provider and region. Genectics.com covers which services support uploads and what you can get from them."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="/styles.css" />
+
+  <!-- ===== Consent (HARD) ===== -->
+  <style>
+    body.consent-locked {
+      overflow: hidden !important;
+      touch-action: none !important;
+    }
+    .consent-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 99999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background: rgba(15, 23, 42, 0.82);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+    }
+    .consent-overlay[aria-hidden="false"] { display: flex; }
+
+    .consent-modal {
+      width: 100%;
+      max-width: 720px;
+      background: #0b1220;
+      color: #e5e7eb;
+      border: 1px solid rgba(148, 163, 184, 0.18);
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+      overflow: hidden;
+    }
+    .consent-header { padding: 18px 18px 0 18px; }
+    .consent-title { margin: 0; font-size: 1.1rem; letter-spacing: 0.01em; }
+    .consent-body {
+      padding: 14px 18px 18px 18px;
+      line-height: 1.55;
+      color: #cbd5e1;
+      font-size: 0.95rem;
+    }
+    .consent-body p { margin: 10px 0; }
+    .consent-list { margin: 12px 0 0 0; padding-left: 18px; }
+    .consent-list li { margin: 6px 0; }
+
+    .consent-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding: 16px 18px 18px 18px;
+      background: rgba(2, 6, 23, 0.5);
+      border-top: 1px solid rgba(148, 163, 184, 0.14);
+    }
+    .consent-btn {
+      appearance: none;
+      border: 0;
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 0.92rem;
+      letter-spacing: 0.01em;
+      white-space: nowrap;
+    }
+    .consent-accept { background: #ec4899; color: #0b1220; }
+    .consent-reject {
+      background: transparent;
+      color: #e5e7eb;
+      border: 1px solid rgba(148, 163, 184, 0.35);
+    }
+    .consent-links {
+      margin-left: auto;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+    .consent-links a { color: #93c5fd; text-decoration: none; }
+    .consent-links a:hover { text-decoration: underline; }
+  </style>
+
+  <!-- Consent + GA loader (GA4 loads only AFTER accept) -->
+  <script>
+    (function () {
+      const CONSENT_KEY = "ronarn_consent_analytics_v1";
+      const GA_ID = "G-3GVJ73QQ5J"; // same as Genectics.com
+
+      function lockPage() {
+        document.body.classList.add("consent-locked");
+        const overlay = document.getElementById("consent-overlay");
+        if (overlay) overlay.setAttribute("aria-hidden", "false");
+      }
+
+      function unlockPage() {
+        document.body.classList.remove("consent-locked");
+        const overlay = document.getElementById("consent-overlay");
+        if (overlay) overlay.setAttribute("aria-hidden", "true");
+      }
+
+      function loadGA4() {
+        if (window.__gaLoaded) return;
+        window.__gaLoaded = true;
+
+        const s = document.createElement("script");
+        s.async = true;
+        s.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(GA_ID);
+        document.head.appendChild(s);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        window.gtag = gtag;
+
+        gtag("js", new Date());
+        gtag("config", GA_ID, { anonymize_ip: true });
+      }
+
+      function setConsent(value) { localStorage.setItem(CONSENT_KEY, value); }
+      function getConsent() { return localStorage.getItem(CONSENT_KEY); }
+      function clearConsent() { localStorage.removeItem(CONSENT_KEY); }
+
+      window.__openPrivacySettings = function () {
+        clearConsent();
+        window.location.reload();
+      };
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const saved = getConsent();
+
+        if (saved === "accepted") { loadGA4(); unlockPage(); return; }
+        if (saved === "rejected") { unlockPage(); return; }
+
+        lockPage();
+
+        const btnAccept = document.getElementById("consent-accept");
+        const btnReject = document.getElementById("consent-reject");
+
+        btnAccept.addEventListener("click", function () {
+          setConsent("accepted");
+          loadGA4();
+          unlockPage();
+        });
+
+        btnReject.addEventListener("click", function () {
+          setConsent("rejected");
+          unlockPage();
+        });
+      });
+    })();
+  </script>
+</head>
+
+<body class="consent-locked">
+  <!-- HARD Consent Overlay -->
+  <div id="consent-overlay" class="consent-overlay" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Privacy choices">
+    <div class="consent-modal">
+      <div class="consent-header">
+        <h2 class="consent-title">Privacy choices</h2>
+      </div>
+      <div class="consent-body">
+        <p>
+          AncestryTest.bio uses <strong>analytics</strong> to understand which ancestry topics are useful (accuracy, relatives, privacy)
+          and to improve the site over time.
+        </p>
+        <ul class="consent-list">
+          <li><strong>If you accept:</strong> we load Google Analytics (GA4) to measure visits and basic usage trends.</li>
+          <li><strong>If you reject:</strong> the site still works normally, but we do not load analytics.</li>
+        </ul>
+        <p>
+          Acceptance is only about <strong>analytics</strong>. Some outgoing links may lead to comparisons on Genectics.com.
+        </p>
+      </div>
+      <div class="consent-actions">
+        <button id="consent-accept" class="consent-btn consent-accept" type="button">Accept analytics</button>
+        <button id="consent-reject" class="consent-btn consent-reject" type="button">Reject</button>
+
+        <div class="consent-links">
+          <span>Learn more:</span>
+          <a href="/privacy.html">Privacy</a>
+          <span>·</span>
+          <a href="/about.html">About</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page">
+
+    <!-- HEADER -->
+    <header>
+      <div class="brand">
+        <div class="brand-name">AncestryTest.bio</div>
+        <div class="brand-tagline">
+          Evidence-based guidance on ancestry DNA tests, ethnicity estimates and relatives.
+        </div>
+      </div>
+      <div class="trust-tags">
+        <span class="trust-tag">No sponsorships</span>
+        <span class="trust-tag">Educational only</span>
+        <span class="trust-tag">Linked to Genectics.com</span>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+      <!-- HERO -->
+      <section class="hero" aria-labelledby="hero-heading">
+        <div>
+          <h1 id="hero-heading" class="hero-title">
+            Understand ancestry DNA tests before you buy.
+          </h1>
+
+          <p class="hero-subtitle">
+            Ancestry reports are estimates, not “DNA astrology” and not perfect maps. This site explains
+            how ethnicity percentages are built, what relative-matching does best, and how to choose a kit
+            that fits your real goal.
+          </p>
+
+          <ul class="hero-list">
+            <li>Why two companies can give different ancestry percentages.</li>
+            <li>What “accuracy” means for ancestry vs. relatives.</li>
+            <li>How to evaluate privacy, deletion, and long-term DNA storage.</li>
+          </ul>
+
+          <div class="hero-highlight">
+            Our goal is simple: help you pick the right first test — and avoid overpaying for the wrong features.
+          </div>
+
+          <div class="hero-actions">
+            <a href="#basics" class="btn-primary">
+              Start with ancestry basics
+              <span class="chevron">›</span>
+            </a>
+            <a href="#compare" class="btn-secondary">
+              Compare kits on Genectics.com
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero-aside">
+          <div class="rating-pill">
+            <span class="star">★</span>
+            Most reliable feature: <strong>relative-matching</strong>
+          </div>
+          <p class="hero-note">
+            If your main goal is finding relatives, database size and match tools often matter more than minor differences in
+            ethnicity percentages.
+          </p>
+        </aside>
+      </section>
+
+      <!-- BASICS -->
+      <section id="basics" class="card">
+        <h2 class="section-title">Ancestry DNA 101: what you’re actually buying</h2>
+        <p class="section-subtitle">
+          Consumer ancestry DNA tests typically analyze hundreds of thousands of genetic markers (SNPs). Providers then use
+          statistical models and reference panels to estimate ancestry regions and identify relatives who share DNA segments.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <h3>What ancestry tests can do well</h3>
+            <ul class="hero-list">
+              <li>Identify close relatives (parents, siblings) and many cousins.</li>
+              <li>Provide broad regional ancestry patterns for well-represented populations.</li>
+              <li>Help connect to family trees, depending on provider tools.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Where people get disappointed</h3>
+            <ul class="hero-list">
+              <li>Expecting exact locations or perfectly stable percentages.</li>
+              <li>Underrepresented regions can appear “broader” or shift with updates.</li>
+              <li>Assuming “bigger percentage = more certain” (not always true).</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- WHY RESULTS DIFFER -->
+      <section id="differences" class="card">
+        <h2 class="section-title">Why results differ between companies</h2>
+        <p class="section-subtitle">
+          Two providers can interpret the same DNA differently because they use different reference datasets, different clustering
+          methods, and different definitions of regions. Updates can also change results over time.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Three drivers of differences</h3>
+            <ul class="hero-list">
+              <li><strong>Reference panels:</strong> who is included and how populations are defined.</li>
+              <li><strong>Models:</strong> how markers are weighted and grouped.</li>
+              <li><strong>Region labels:</strong> how companies name and split ancestry regions.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Practical takeaway</h3>
+            <ul class="hero-list">
+              <li>Use ancestry percentages as a <strong>directional</strong> view.</li>
+              <li>Trust close relative matches more than small percentage differences.</li>
+              <li>Consider testing multiple services if a question is important.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- PRIVACY -->
+      <section id="privacy" class="card">
+        <h2 class="section-title">Privacy: the part most people ignore</h2>
+        <p class="section-subtitle">
+          An ancestry test is not just a one-time purchase; it can become a long-term data relationship. Before you test, you should
+          understand retention, deletion, research opt-ins, and how your data is handled if a company is sold.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Questions to ask any provider</h3>
+            <ul class="hero-list">
+              <li>Can I request deletion of raw DNA data and destruction of my sample?</li>
+              <li>Is research participation opt-in or opt-out?</li>
+              <li>What are the policies for law-enforcement requests (if any)?</li>
+              <li>Can I control relative-matching visibility?</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Where we centralize comparisons</h3>
+            <p>
+              Genectics.com maintains a practical comparison across major kits, including region availability and the
+              “real-world” tradeoffs between ancestry detail, relative-matching and privacy.
+            </p>
+            <a href="https://genectics.com/?ref=ancestrytest.bio-privacy" class="btn-primary" target="_blank" rel="noopener">
+              Compare kits on Genectics.com <span class="chevron">›</span>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section id="compare" class="card">
+        <h2 class="section-title">Compare ancestry DNA kits side by side</h2>
+        <p class="section-subtitle">
+          If you want the best “first kit” for your goal (ancestry detail vs. relatives vs. health add-ons), use the full
+          comparison hub:
+        </p>
+
+        <div class="hero-actions">
+          <a href="https://genectics.com/?ref=ancestrytest.bio-cta"
+             class="btn-primary" target="_blank" rel="noopener">
+            Go to Genectics.com – DNA kit comparison
+            <span class="chevron">›</span>
+          </a>
+          <a href="https://genectics.com/?ref=ancestrytest.bio-cta-2#compare"
+             class="btn-secondary" target="_blank" rel="noopener">
+            Jump to the comparison table
+          </a>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="card faq" aria-labelledby="faq-heading" style="margin-top: 24px;">
+        <h2 id="faq-heading" class="section-title">Ancestry DNA FAQ</h2>
+
+        <h3>Is an ancestry DNA test the same as a health DNA test?</h3>
+        <p>
+          Not necessarily. Some kits focus mainly on ancestry and relatives, while others add selected health/wellbeing reports.
+          Features vary by provider and region.
+        </p>
+
+        <h3>Should I test with more than one company?</h3>
+        <p>
+          If you’re searching for relatives, testing across multiple large databases can increase match coverage. If you mainly want
+          ancestry estimates, multiple tests can provide more perspectives, but results can still differ due to methodology.
+        </p>
+
+        <h3>Can I upload my DNA file somewhere else?</h3>
+        <p>
+          Some services support uploads for additional matching or reports. Availability varies. Genectics.com keeps an overview of
+          common upload options and what they provide.
+        </p>
+      </section>
+
+      <!-- DISCLAIMER -->
+      <section class="disclaimer">
+        <p>
+          AncestryTest.bio does not provide medical or legal advice. This website is for informational and educational purposes only.
+          Always consult qualified professionals for medical decisions or legal matters.
+        </p>
+        <p>
+          Some outgoing links may lead to comparisons and affiliate-supported pages on Genectics.com. Editorial content is independent and not for sale.
+        </p>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <span>© <span id="year"></span> AncestryTest.bio – Independent ancestry DNA education.</span>
+      <span>Operated by ronarn AS, Norway. Neutral information site linked to Genectics.com.</span>
+      <span>Contact: <a href="mailto:info@ancestrytest.bio">info@ancestrytest.bio</a></span>
+      <span>Business address: Pb. 1010 Lillestrøm Syd, 2012 Lillestrøm, Norway</span>
+
+      <span class="footer-links">
+        <a href="/about.html">About AncestryTest.bio</a> ·
+        <a href="/privacy.html">On-site Privacy</a> ·
+        <a href="https://organization.bio" target="_blank" rel="noopener">About the Publisher</a> ·
+        <a href="https://contactus.bio" target="_blank" rel="noopener">Network Contact</a> ·
+        <a href="https://disclaimer.bio" target="_blank" rel="noopener">Disclaimer</a> ·
+        <a href="https://terms.bio" target="_blank" rel="noopener">Terms</a>
+        <span> · </span>
+        <a href="#" onclick="window.__openPrivacySettings(); return false;">Privacy settings</a>
+      </span>
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
